@@ -11,11 +11,9 @@ def main():
         connection_radius=1.5
     )
     line_topology_network.build_graph()
-    # Удалены вызовы plot_points
     plt.plot_network_grapth(line_topology_network, 'l_f')
     line_topology_network.ospf('l_f')
 
-    # Удаляем указанный узел
     line_topology_network.remove_node(2)
     plt.plot_network_grapth(line_topology_network, 'l_r')
     line_topology_network.ospf('l_r')
@@ -43,7 +41,6 @@ def main():
         connection_radius=1.7
     )
     ring_topology_network.build_graph()
-    # Удалены вызовы plot_points
     ring_topology_network.ospf('r_f')
     plt.plot_network_grapth(ring_topology_network, 'r_f')
 

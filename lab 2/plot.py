@@ -10,8 +10,8 @@ def img_save_dst() -> str:
 class Plotter:
     def __init__(self) -> None:
         pass
-
-    # Методы plot_points можно оставить, просто они не вызываются больше из main.py
+    
+    
     def plot_points(self, points: List[Point], show: bool = True, title: str = '') -> None:
         xs = [p.x for p in points]
         ys = [p.y for p in points]
